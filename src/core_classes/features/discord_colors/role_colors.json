@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Manager",
+        "hex": "#FFD900",
+        "is_staff_role": true
+    },
+    {
+        "name": "Moderator",
+        "hex": "#3498DB",
+        "is_staff_role": true
+    },
+    {
+        "name": "Muted",
+        "hex": "#546E7A"
+    },
+    {
+        "name": "QOTX Creator",
+        "hex": "#E91E63",
+        "is_staff_role": true
+    },
+    {
+        "name": "QOTX Winner",
+        "hex": "#F1C40F"
+    },
+    {
+        "name": "Maths Helper",
+        "hex": "#E40000",
+        "is_helper_role": true
+    },
+    {
+        "name": "Chemistry Helper",
+        "hex": "#D44000"
+    },
+    {
+        "name": "Comp Sci Helper",
+        "hex": "#00643E"
+    },
+    {
+        "name": "Physics Helper",
+        "hex": "#00A721"
+    },
+    {
+        "name": "QotX Subscribe",
+        "hex": "#71368A"
+    },
+    {
+        "name": "Partner",
+        "hex": "#D2AEFF"
+    },
+    {
+        "name": "Education Level Info",
+        "hex": "#1ABC9C"
+    },
+    {
+        "name": "Interest Info",
+        "hex": "#992D22"
+    },
+    {
+        "name": "Reason Info",
+        "hex": "#607D8B"
+    },
+    {
+        "name": "Location Info",
+        "hex": "#95A5A6"
+    },
+    {
+        "name": "Lilac",
+        "hex": "#CBA2C8",
+        "is_suggestion": true
+    }
+]

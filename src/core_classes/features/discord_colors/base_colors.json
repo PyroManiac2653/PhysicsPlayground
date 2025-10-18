@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Light",
+        "hex": "#FFFFFF"
+    },
+    {
+        "name": "Ash",
+        "hex": "#575865"
+    },
+    {
+        "name": "Dark",
+        "hex": "#363641"
+    },
+    {
+        "name": "Onyx",
+        "hex": "#192022"
+    }
+]

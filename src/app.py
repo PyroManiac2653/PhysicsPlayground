@@ -1,4 +1,5 @@
 import os
+
 import nextcord
 from nextcord import Interaction, SlashOption
 from nextcord.ext import commands
@@ -6,18 +7,16 @@ from nextcord.ext import commands
 import typing
 from typing import Optional
 
-import decorators.auth_decorators
-
 intents = nextcord.Intents.default()
-intents.guilds = True
-intents.guild_messages = True
-intents.message_content = True
-
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-@bot.event
-async def on_ready():
-    print(f"Bot is ready. Logged in as {bot.user}")
+# @bot.event
+# async def on_ready():
+#     print(f"Bot is ready. Logged in as {bot.user}")
+
+# @bot.slash_command(name="hello", description="Says hello!")
+# async def hello(interaction: Interaction):
+#     await interaction.response.send_message("Hello, world!")
 
 @bot.slash_command(name="online-test", description="Provides a status if bot is online.")
 async def testE(interaction: Interaction):
@@ -27,10 +26,10 @@ async def testE(interaction: Interaction):
 @bot.slash_command(name="option-test2", description="Option test description.")
 async def echo_number(
     interaction: Interaction, number: str = SlashOption(required=True)):
-    await interaction.response.send_message(f"You said: {number}, ephemeral=True")
+    await interaction.response.send_message(f"You said: {number}")
 
 async def on_message(message):
-    
+
     # Check if the message is a DM
     if message.guild is None and not message.author.bot:
         user = message.author
@@ -44,3 +43,5 @@ async def on_message(message):
 # Run the bot with the token
 token = os.environ['DISCORD_PHYSICS_PLAYGROUND_BOT_TOKEN']
 bot.run(token)
+
+print("Bot is running.")

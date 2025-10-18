@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>50</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>30</x>
+      <y>50</y>
+      <w>850</w>
+      <h>660</h>
+    </coordinates>
+    <panel_attributes>*Requirements*
+-
+*QOTX Posting*
+- help post questions at a scheduled time
+- formulate post to announce winners, and post it on a scheduled time
+
+*QOTX Answer Retrieval*
+let users answer
+  - create private channel if not in one already
+  - post to a qot-manager answer channel
+  - store that post URL for easy retrieval
+  - delete post URL storage for memory management
+  
+*QOTX Tracking*
+keep track of open &amp; closed questions by number and URL 
+keep history of correct answerers and their post &amp; ttime ( use latest edit or keep track of edits)
+prompt qotd-manager for ruling on an answer?
+- use those ruling to identify all correct answers (this will be used to identify the first 3 and a list of all the others)
+- keep track of each poast's info (number, topic, hints, solutions, winners).
+
+*QOTX Engagement*
+- allow users to query for old questions and their info
+
+*Memory*
+Repl.it has 10GiB storage total for free. No memory management is needed yet, but perhaps allow deletion of information.
+
+*Security*
+- Roles for posting
+-? Channel designations
+- Ability to specify posting options per server
+
+*Reaction Control*
+- reaction white list per channel
+- reaction black list per channel
+
+Question tracking
+- asker can mark a post as a question
+- asker can mark question as answered
+- answerer can mark a response as an answer,
+  this can notify user, depending on user settings
+- users can query bot for open or unanswered questions
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
